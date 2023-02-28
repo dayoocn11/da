@@ -5,23 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP日本001 两元店.com, server: jp.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: jp.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: JP日本流媒体节点001, server: jpjs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: jpjs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: AU澳大利亚001, server: ap.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: ap.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: DE德国流媒体节点001, server: dejs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: dejs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: AU澳大利亚流媒体节点001, server: aujs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: aujs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: USA美国001, server: usa.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: usa.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: lu卢森堡001, server: lu.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: lu.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: NL荷兰流媒体节点001, server: nljs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: nljs.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: 三分机场.xyz 站内返利65%, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡高速接入点-04, server: sg4.sanfen001.pics, port: 2001, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-03, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 日本-80端口-04, server: jp80-4.sanfen001.pics, port: 80, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港-80端口-01, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 香港高速接入点-05, server: hk5.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 日本高速接入点-04, server: jp4.sanfen001.pics, port: 2008, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 日本高速接入点-02, server: jp2.sanfen001.pics, port: 2007, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 日本高速接入点-01, server: jp1.sanfen001.pics, port: 2005, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 香港高速接入点-04, server: hk4.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 日本高速接入点-03, server: jp3.sanfen001.pics, port: 2001, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
   - {name: UAE迪拜流媒体节点001, server: uaejs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: uaejs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大流媒体节点001, server: cajs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: cajs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: CA加拿大001, server: ca.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: ca.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: IN印度001, server: in.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: in.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: UK英国流媒体节点001, server: ukjs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: ukjs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: CH瑞士流媒体节点001, server: chjs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: chjs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: FR法国流媒体节点001, server: frjs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: frjs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: DE德国001, server: de.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: de.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: IL以色列流媒体节点001, server: iljs.stablize.top, port: 443, type: trojan, password: 29aa9820-78aa-43de-a477-587747ce21a3, sni: iljs.stablize.top, skip-cert-verify: true, udp: true}
   - {name: 甲骨文, server: 130.162.139.50, port: 8388, type: vmess, uuid: c98ee1c3-5ea3-4fbf-a458-4c8393149f2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -29,46 +24,36 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: 🎥 NETFLIX
     type: select
@@ -76,23 +61,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: ⛔️ 广告拦截
     type: select
@@ -112,74 +92,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港高速接入点-03
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 香港高速接入点-04
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: 🍎 苹果服务
     type: select
@@ -187,23 +156,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
   - name: 🎯 全球直连
     type: select
@@ -220,23 +184,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP日本001 两元店.com
-      - JP日本流媒体节点001
-      - AU澳大利亚001
-      - DE德国流媒体节点001
-      - AU澳大利亚流媒体节点001
-      - USA美国001
-      - lu卢森堡001
-      - NL荷兰流媒体节点001
+      - 三分机场.xyz 站内返利65%
+      - 新加坡高速接入点-04
+      - 香港高速接入点-03
+      - 日本-80端口-04
+      - 香港-80端口-01
+      - 香港高速接入点-05
+      - 日本高速接入点-04
+      - 日本高速接入点-02
+      - 日本高速接入点-01
+      - 香港高速接入点-04
+      - 日本高速接入点-03
       - UAE迪拜流媒体节点001
-      - CA加拿大流媒体节点001
-      - CA加拿大001
-      - IN印度001
-      - UK英国流媒体节点001
-      - CH瑞士流媒体节点001
-      - FR法国流媒体节点001
-      - DE德国001
-      - IL以色列流媒体节点001
       - 甲骨文
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
