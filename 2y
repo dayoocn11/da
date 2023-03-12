@@ -5,79 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 02 | 专线, server: sg2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: sg2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港高速接入点-02, server: hk2.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 香港 06 | 专线, server: hk6.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: hk6.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港 04 | 专线, server: hk4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: hk4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 01 | 专线, server: sg1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: sg1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国 04 | 专线, server: us4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: us4.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 三分机场.xyz 站内返利65%, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 一元机场.com, server: hk1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: hk1.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: 香港高速接入点-04, server: hk4.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 日本高速接入点-03, server: jp3.af49c4e4c2ef.sanfen001.pics, port: 2006, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
-  - {name: 美国 02 | 专线, server: us2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: us2.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本高速接入点-02, server: jp2.af49c4e4c2ef.sanfen001.pics, port: 2004, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 韩国高速接入点-01, server: kr1.af49c4e4c2ef.sanfen001.pics, port: 2001, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: kr1.sanfen001.pics}, udp: true}
+  - {name: 三分机场.xyz 站内返利65%, server: hk1.b.bd6b6c503c93.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 香港高速接入点-03, server: hk3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡高速接入点-02, server: sg2.af49c4e4c2ef.sanfen001.pics, port: 2005, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 香港高速接入点-05, server: hk5.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
   - {name: 香港高速接入点-06, server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
-  - {name: 美国 03 | 专线, server: us3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, port: 443, type: trojan, password: 6dfd8d2a-95b5-4e56-aa1c-576550b8c38b, sni: us3.cf4589a1-71ec-429f-b46a-892af2259b8e.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本-80端口-04, server: jp80.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 新加坡高速接入点-04, server: sg4.af49c4e4c2ef.sanfen001.pics, port: 2005, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 日本高速接入点-02, server: jp2.af49c4e4c2ef.sanfen001.pics, port: 2004, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: 新加坡高速接入点-03, server: sg3.af49c4e4c2ef.sanfen001.pics, port: 2005, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /zh-cn, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 新加坡高速接入点-01, server: sg1.af49c4e4c2ef.sanfen001.pics, port: 2005, type: vmess, uuid: 6b6a5d73-f1e0-4420-b261-49713b42b60e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cn, ws-headers: {Host: aws.amazon.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇩🇪DE_148, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vde2.0bad.com}, udp: true}
+  - {name: ip_ss_131.186.21.62, server: 131.186.21.62, port: 4433, type: ss, cipher: aes-256-gcm, password: yy595721, udp: true}
+  - {name: 233v2.com_131.186.21.62, server: 131.186.21.62, port: 46842, type: vmess, uuid: 718db77c-25fb-4287-84d1-620dc25ab58a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -96,28 +100,28 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
       - 香港高速接入点-04
+      - 香港高速接入点-03
+      - 香港高速接入点-05
       - 香港高速接入点-06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -125,59 +129,62 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -193,20 +200,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 02 | 专线
-      - 香港高速接入点-02
-      - 香港 06 | 专线
-      - 香港 04 | 专线
-      - 新加坡 01 | 专线
-      - 美国 04 | 专线
-      - 三分机场.xyz 站内返利65%
-      - 一元机场.com
       - 香港高速接入点-04
-      - 日本高速接入点-03
-      - 美国 02 | 专线
-      - 日本高速接入点-02
+      - 韩国高速接入点-01
+      - 三分机场.xyz 站内返利65%
+      - 香港高速接入点-03
+      - 新加坡高速接入点-02
+      - 香港高速接入点-05
       - 香港高速接入点-06
-      - 美国 03 | 专线
+      - 日本-80端口-04
+      - 新加坡高速接入点-04
+      - 日本高速接入点-02
+      - 新加坡高速接入点-03
+      - 新加坡高速接入点-01
+      - Relay_🇺🇸US-🇩🇪DE_148
+      - ip_ss_131.186.21.62
+      - 233v2.com_131.186.21.62
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
