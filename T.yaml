@@ -74,7 +74,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 90
     proxies:
       - 5x-临时-新加坡-高级节点1
       - 距离下次重置剩余：25 天
